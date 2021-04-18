@@ -4,6 +4,17 @@ summary: Simple yet fancy CPU architecture fetching tool
 description: |
   Simple yet fancy CPU architecture fetching tool
   
+  cpufetch has a help menu: cpufetch --help
+  By default, cpufetch will print the CPU art with the system colorscheme. 
+  However, you can always set a custom color scheme, either specifying 
+  Intel or AMD, or specifying the colors in RGB format:
+
+  ./cpufetch --color intel (default color for Intel)
+  ./cpufetch --color amd (default color for AMD)
+  ./cpufetch --color 239,90,45:210,200,200:100,200,45:0,200,200 (example)
+  
+  For more info, see the developer's repo: https://github.com/Dr-Noob/cpufetch 
+  
 license: MIT
 
 base: core20
@@ -15,8 +26,6 @@ architectures:
   - build-on: amd64
   - build-on: arm64
   - build-on: armhf
-  - build-on: ppc64el
-  - build-on: s390x
   
 apps:
   cpufetch:
