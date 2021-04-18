@@ -19,14 +19,17 @@ architectures:
 apps:
   cpufetch:
     command: usr/bin/cpufetch
+    plugs:
+      - hardware-observe
+      - system-observe
+
+parts:
+  cpufetch:
     source: https://github.com/Dr-Noob/cpufetch
     source-type: git
     plugin: make
     build-environment:
-      - PREFIX: "/usr"
-    plugs:
-      - hardware-observe
-      - system-observe
+      - PREFIX: "/usr"  
       
     override-pull: |
       snapcraftctl pull
