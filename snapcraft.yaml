@@ -1,0 +1,34 @@
+name: cpufetch
+adopt-info: cpufetch
+summary: Simple yet fancy CPU architecture fetching tool
+description: |
+  Simple yet fancy CPU architecture fetching tool
+  
+license: MIT
+
+base: core18
+grade: stable
+confinement: strict
+compression: lzo
+
+architectures:
+  - build-on: amd64
+#  - build-on: arm64
+#  - build-on: armhf
+  
+apps:
+  cpufetch:
+    command: usr/bin/cpufetch
+    source: https://github.com/Dr-Noob/cpufetch
+    source-type: git
+    plugin: make
+    build-environment:
+      - PREFIX: "/usr"
+    plugs:
+      - hardware-observe
+      - system-observe
+      
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"      
+          
