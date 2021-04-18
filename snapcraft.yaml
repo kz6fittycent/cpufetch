@@ -18,9 +18,6 @@ architectures:
 apps:
   cpufetch:
     command: usr/bin/cpufetch
-    plugs:
-      - hardware-observe
-      - system-observe
 
 parts:
   cpufetch:
