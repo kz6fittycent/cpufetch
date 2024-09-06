@@ -16,7 +16,10 @@ description: |
   For more info, see the developer's repo: https://github.com/Dr-Noob/cpufetch 
   
 license: MIT
-
+issues: https://github.com/kz6fittycent/cpufetch
+source-code: https://github.com/Dr-Noob/cpufetch
+contact: https://github.com/kz6fittycent/cpufetch
+website: https://github.com/Dr-Noob/cpufetch
 base: core24
 grade: stable
 confinement: strict
