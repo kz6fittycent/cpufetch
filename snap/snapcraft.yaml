@@ -26,7 +26,18 @@ confinement: strict
 compression: lzo
 
 platforms:
-build-for: [all]
+  amd64:
+    build-on: [amd64]
+    build-for: [amd64]
+  arm64:
+    build-on: [arm64]
+    build-for: [arm64]
+  riscv64:
+    build-on: [riscv64]
+    build-for: [riscv64]
+  ppc64el:
+    build-on: [ppc64el]
+    build-for: [ppc64el]
   
 apps:
   cpufetch:
