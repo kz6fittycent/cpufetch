@@ -1,4 +1,4 @@
-[![cpufetch](https://snapcraft.io/cpufetch/badge.svg)](https://snapcraft.io/cpufetch)
+[![cpufetch](https://snapcraft.io/cpufetch/badge.svg)](https://snapcraft.io/cpufetch) [![🧪 Snap Builds](https://github.com/kz6fittycent/cpufetch/workflows/%F0%9F%A7%AA%20Snap%20Builds/badge.svg)](https://github.com/kz6fittycent/cpufetch/actions?query=workflow:"🧪+Snap+Builds")
 
 
 # cpufetch
